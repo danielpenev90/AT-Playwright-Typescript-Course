@@ -17,4 +17,3 @@ console.log(country);
     let numbers: number []= [10, 20];
     let combined: (string | number)[] = [10,50, "Hello"];
 
-
