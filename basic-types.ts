@@ -62,4 +62,10 @@ if (numOne > 3) {
 
 //console.log("areEqual" , areEqual);
 
+//union types
+let id: number | string;
 
+id = 10;
+id = "10";
+
+let result: number | boolean | null;

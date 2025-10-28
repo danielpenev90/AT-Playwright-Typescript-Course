@@ -1,0 +1,18 @@
+const name: string = "Petar Petrov";
+const age: number = 20;
+
+console.log(`Здравей! Аз съм ${name}, на ${age} години.`);
+
+const num1: number = 15;
+const num2: number = 8;
+
+const addition: number = num1 + num2;
+const subtraction: number = num1 - num2;
+
+console.log(`Събиране: ${addition}`);
+console.log(`Изваждане: ${subtraction}`);
+
+const num: number = 12;
+const isWithinRange: boolean = num >= 10 && num <= 20;
+
+console.log(`Числото ${num} е в диапазона (10 - 20): ${isWithinRange}`);
