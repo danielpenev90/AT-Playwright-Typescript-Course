@@ -82,7 +82,7 @@ const user: User & { password?: number } = {
     job: 'QA',
     password: 12345,
 };
-console.log(user);
+//console.log(user);
 
 const user2: User = {
     name: 'Alice',
@@ -90,7 +90,7 @@ const user2: User = {
     role: 'user',
     job: 'Developer',
 };
-console.log(user2);
+//console.log(user2);
 
 interface userpemissions extends User {
     permissions: string;
@@ -103,3 +103,28 @@ const user3: userpemissions = {
     job: 'Manager',
     permissions: 'denied',
 };
+
+//exercise sum total price
+interface Product {
+    name: string;
+    price: number;
+    getTotalPrice: (quantity: number) =>  number;
+}
+
+const phone: Product = {
+    name: 'iPhone 17',
+    price: 100,
+    getTotalPrice: function(quantity: number = 1) {
+        return this.price * quantity;
+    }
+};
+
+function orderDetails(product: Product, quantity: number) {
+   // console.log("quantity", quantity);
+    //console.log("product", product);
+    console.log("Order for:", `${product.name}`);
+    console.log("Product quantity:", `${quantity}`);
+console.log(`Product unit price: $${product.price}$`);
+console.log(`Total price: ${product.getTotalPrice(quantity)}$`);
+};
+orderDetails(phone, 5);
